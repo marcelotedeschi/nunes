@@ -1,5 +1,5 @@
-const int LED_PORT = 13;
-const int MOTOR_PORT = 2;
+const int LED_PORT = D7;
+const int MOTOR_PORT = D0;
 const int SENSOR_PORT = A0;
 
 // Declare humidity limits (the lower the more humid)
@@ -9,7 +9,6 @@ const int LIMIT_LOW_HUMIDITY = 800; // dryness limit
 void setup() {
   pinMode(LED_PORT, OUTPUT);
   pinMode(MOTOR_PORT, OUTPUT);
-  pinMode(SENSOR_PORT, INPUT);
 
   Serial.begin(9600);
 }
